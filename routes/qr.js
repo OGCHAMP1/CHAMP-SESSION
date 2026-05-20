@@ -17,7 +17,7 @@ const {
     delay,
     fetchLatestBaileysVersion
 } = require("@whiskeysockets/baileys");
-const princeChannelId = '120363404978384902@newsletter';
+const princeChannelId = '120363230090465542@newsletter';
 
 const sessionDir = path.join(__dirname, "session");
 
@@ -60,7 +60,7 @@ router.get('/', async (req, res) => {
                             <!DOCTYPE html>
                             <html>
                             <head>
-                                <title>PRINCE-MDX | QR CODE</title>
+                                <title>CHAMP-MD_v2 | QR CODE</title>
                                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
                                 <style>
                                     body {
@@ -164,7 +164,7 @@ router.get('/', async (req, res) => {
                             </head>
                             <body>
                                 <div class="container">
-                                    <h1>PRINCE-MDX QR CODE</h1>
+                                    <h1>CHAMP-MD_v2 QR CODE</h1>
                                     <div class="qr-container">
                                         <div class="qr-code pulse">
                                             <img src="${qrImage}" alt="QR Code"/>
@@ -192,7 +192,7 @@ router.get('/', async (req, res) => {
 
                 if (connection === "open") {
                     //await Prince.groupAcceptInvite("KJQNQ1RkuImChXtXfnq84X");
-            //await Prince.newsletterFollow(princeChannelId);
+            //await Prince.newsletterFollow(champChannelId);
                     await delay(10000);
 
                     let sessionData = null;
@@ -228,28 +228,28 @@ router.get('/', async (req, res) => {
                         let b64data = compressedData.toString('base64');
                         const Sess = await sendButtons(Prince, Prince.user.id, {
             title: '',
-            text: 'PRINCE-MDX!' + b64data,
-            footer: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘɪɴᴄᴇ ᴛᴇᴄʜ*`,
+            text: 'CHAMP-MD_v2!' + b64data,
+            footer: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ〔𝗢𝗚 𝗖𝗛𝗔𝗠𝗣〕 *`,
             buttons: [
                 { 
                     name: 'cta_copy', 
                     buttonParamsJson: JSON.stringify({ 
                         display_text: 'Copy Session', 
-                        copy_code: 'PRINCE-MDX!' + b64data 
+                        copy_code: 'CHAMP-MD_v2!' + b64data 
                     }) 
                 },
                 {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: 'Visit Bot Repo',
-                        url: 'https://github.com/Mayelprince/PRINCE-MDXI/fork'
+                        url: 'https://github.com/OGCHAMP1/CHAMP-MD_v2/fork'
                     })
                 },
                 {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: 'Join WaChannel',
-                        url: 'https://whatsapp.com/channel/0029VbCKzJ66hENmMeROfT0e'
+                        url: 'https://whatsapp.com/channel/0029VaN2eQQ59PwNixDnvD16'
                     })
                 }
             ]
