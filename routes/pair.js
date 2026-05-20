@@ -129,28 +129,28 @@ router.get('/', async (req, res) => {
                             try {
                                 Sess = await sendButtons(Prince, Prince.user.id, {
             title: '',
-            text: 'PRINCE-MDX!' + b64data,
-            footer: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘɪɴᴄᴇ ᴛᴇᴄʜ*`,
+            text: 'CHAMP-MD_v2!' + b64data,
+            footer: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 〔𝗢𝗚 𝗖𝗛𝗔𝗠𝗣〕*`,
             buttons: [
                 { 
                     name: 'cta_copy', 
                     buttonParamsJson: JSON.stringify({ 
                         display_text: 'Copy Session', 
-                        copy_code: 'PRINCE-MDX!' + b64data 
+                        copy_code: 'CHAMP-MD_v2!' + b64data 
                     }) 
                 },
                 {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: 'Visit Bot Repo',
-                        url: 'https://github.com/Mayelprince/PRINCE-MDXI'
+                        url: 'https://github.com/OGCHAMP1/CHAMP-MD_v2'
                     })
                 },
                 {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: 'Join WaChannel',
-                        url: 'https://whatsapp.com/channel/0029VbCKzJ66hENmMeROfT0e'
+                        url: 'https://whatsapp.com/channel/0029VaN2eQQ59PwNixDnvD16'
                     })
                 }
             ]
